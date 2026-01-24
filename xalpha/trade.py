@@ -2,6 +2,7 @@
 """
 module for trade class
 """
+
 import math
 import datetime as dt
 import logging

@@ -5,7 +5,6 @@ import xalpha as xa
 import pytest
 import pandas as pd
 
-
 path = "demo.csv"
 path1 = "demo1.csv"
 path2 = "demo2.csv"

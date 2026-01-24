@@ -91,9 +91,7 @@ def _set_display_notebook():
     """
     from IPython.core.display import display, Javascript
 
-    display(
-        Javascript(
-            """
+    display(Javascript("""
             require.config({
                 paths: {
                     DT: '//cdn.datatables.net/1.10.20/js/jquery.dataTables.min',
@@ -101,9 +99,7 @@ def _set_display_notebook():
             });
             $('head').append('<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">');
             $('head').append('<style> td, th {{text-align: center;}}</style>')
-        """
-        )
-    )
+        """))
 
     def _repr_datatable_(self):
         # create table DOM

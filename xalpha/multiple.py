@@ -26,7 +26,6 @@ from xalpha.trade import (
 from xalpha.universal import get_fund_type, ttjjcode, get_rt, get_industry_fromxq
 import xalpha.universal as xu
 
-
 logger = logging.getLogger(__name__)
 
 

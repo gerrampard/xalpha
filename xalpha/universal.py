@@ -598,9 +598,7 @@ def get_historical_fromsp(code, start=None, end=None, region="www", **kws):
     #     )
     url = "https://{region}.spglobal.com/spdji/en/idsexport/file.xls?\
 selectedModule=PerformanceGraphView&selectedSubModule=Graph\
-&yearFlag={flag}YearFlag&indexId={code}".format(
-        region=region, flag=flag, code=code
-    )
+&yearFlag={flag}YearFlag&indexId={code}".format(region=region, flag=flag, code=code)
     r = rget(
         url,
         headers={
@@ -645,9 +643,7 @@ def get_historical_frombb(code, start=None, end=None, **kws):
     else:
         years = "5_YEAR"
     url = "https://www.bloomberg.com/markets2/api/history/{code}/PX_LAST?\
-timeframe={years}&period=daily&volumePeriod=daily".format(
-        years=years, code=code
-    )
+timeframe={years}&period=daily&volumePeriod=daily".format(years=years, code=code)
     r = rget_json(
         url,
         headers={

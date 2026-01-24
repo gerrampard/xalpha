@@ -648,9 +648,7 @@ def plot_kline(
                     }}
                     return colorList;
                 }}
-                """.format(
-                        ucolor=ucolorvolume, dcolor=dcolorvolume
-                    )
+                """.format(ucolor=ucolorvolume, dcolor=dcolorvolume)
                 )  # escape {} when using format
             ),
         )
